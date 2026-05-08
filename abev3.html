@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKBAR.SYS v3.0 — Premium Home Service Barber | Sinduadi, Jogja</title>
+    <meta name="description" content="Layanan barber home service premium di Yogyakarta. Potong rambut, keratin, smoothing, perming oleh barber profesional bintang 5. Booking otomatis via QRIS.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-text">AKBAR.SYS v3.0</div>
+        <div class="loading-bar-container"><div class="loading-bar" id="loadingBar"></div></div>
+        <div class="loading-percent" id="loadingPercent">0%</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="2" width="4" height="4" fill="#D4A843"/><rect x="8" y="2" width="4" height="4" fill="#F0D078"/><rect x="12" y="6" width="4" height="4" fill="#D4A843"/><rect x="8" y="10" width="4" height="4" fill="#F0D078"/><rect x="4" y="14" width="4" height="4" fill="#D4A843"/><rect x="16" y="2" width="4" height="4" fill="#D4A843"/><rect x="20" y="6" width="4" height="4" fill="#F0D078"/><rect x="16" y="10" width="4" height="4" fill="#D4A843"/><rect x="20" y="14" width="4" height="4" fill="#F0D078"/><rect x="10" y="18" width="8" height="4" fill="#A8862E"/><rect x="12" y="22" width="4" height="4" fill="#D4A843"/></svg>
+            AKBAR.SYS
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">TENTANG</a></li>
+            <li><a href="#services">LAYANAN</a></li>
+            <li><a href="#pricing">HARGA</a></li>
+            <li><a href="#schedule">JADWAL</a></li>
+            <li><a href="#booking">BOOKING</a></li>
+        </ul>
+        <div class="nav-status"><span class="status-dot"></span> ONLINE</div>
+        <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" onclick="toggleMobileMenu()">TENTANG</a>
+        <a href="#services" onclick="toggleMobileMenu()">LAYANAN</a>
+        <a href="#pricing" onclick="toggleMobileMenu()">HARGA</a>
+        <a href="#schedule" onclick="toggleMobileMenu()">JADWAL</a>
+        <a href="#booking" onclick="toggleMobileMenu()">BOOKING</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content" style="animation:slide-up .8s ease-out both">
+            <div class="hero-sys">AKBAR.SYS_v3.0 // PREMIUM HOME SERVICE</div>
+            <h1 class="hero-title">ROYAL STYLE<br><span class="outline-text">DIGITAL</span> COMFORT</h1>
+            <p class="hero-subtitle">Transformasi gaya rambut premium dengan sentuhan presisi Keraton Jogja. Kami membawa standar high-end barbershop langsung ke depan pintu Anda.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn-pixel">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="6" y="0" width="4" height="4"/><rect x="4" y="4" width="8" height="4"/><rect x="2" y="8" width="12" height="4"/><rect x="6" y="12" width="4" height="4"/></svg>
+                    BOOK NOW
+                </a>
+                <a href="#services" class="btn-pixel btn-secondary">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="2" y="2" width="12" height="2"/><rect x="2" y="6" width="8" height="2"/><rect x="2" y="10" width="10" height="2"/><rect x="2" y="14" width="6" height="2"/></svg>
+                    LAYANAN
+                </a>
+            </div>
+            <!-- Walking Pixel Barber -->
+            <div class="walker-container">
+                <div class="walker" id="pixelWalker"><div class="walk-bounce">
+                    <svg viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="20" y="4" width="24" height="4" fill="#3D1F14"/><rect x="16" y="8" width="32" height="4" fill="#3D1F14"/><rect x="16" y="12" width="8" height="4" fill="#3D1F14"/><rect x="40" y="12" width="8" height="4" fill="#3D1F14"/>
+                        <rect x="20" y="12" width="4" height="4" fill="#D4A843"/><rect x="24" y="12" width="4" height="4" fill="#C49A3A"/><rect x="32" y="12" width="4" height="4" fill="#C49A3A"/><rect x="36" y="12" width="4" height="4" fill="#D4A843"/>
+                        <rect x="20" y="16" width="24" height="4" fill="#C49A3A"/><rect x="20" y="20" width="24" height="4" fill="#C49A3A"/>
+                        <rect x="24" y="16" width="4" height="4" fill="#1A1208"/><rect x="36" y="16" width="4" height="4" fill="#1A1208"/>
+                        <rect x="28" y="20" width="8" height="2" fill="#8B5E3C"/>
+                        <rect x="28" y="24" width="8" height="4" fill="#C49A3A"/>
+                        <rect x="16" y="28" width="32" height="4" fill="#2E5A27"/><rect x="12" y="32" width="40" height="4" fill="#2E5A27"/><rect x="12" y="36" width="40" height="4" fill="#2E5A27"/><rect x="12" y="40" width="40" height="4" fill="#1A3316"/>
+                        <rect x="12" y="44" width="40" height="4" fill="#D4A843"/><rect x="28" y="44" width="8" height="4" fill="#F0D078"/>
+                        <rect x="16" y="48" width="12" height="4" fill="#3D1F14"/><rect x="36" y="48" width="12" height="4" fill="#3D1F14"/><rect x="16" y="52" width="12" height="4" fill="#3D1F14"/><rect x="36" y="52" width="12" height="4" fill="#3D1F14"/><rect x="16" y="56" width="12" height="4" fill="#3D1F14"/><rect x="36" y="56" width="12" height="4" fill="#3D1F14"/>
+                        <rect x="12" y="60" width="16" height="4" fill="#1A1208"/><rect x="36" y="60" width="16" height="4" fill="#1A1208"/><rect x="12" y="64" width="16" height="4" fill="#1A1208"/><rect x="36" y="64" width="16" height="4" fill="#1A1208"/>
+                        <rect x="52" y="28" width="4" height="4" fill="#C49A3A"/><rect x="56" y="24" width="4" height="4" fill="#A8862E"/><rect x="56" y="20" width="4" height="4" fill="#A8862E"/><rect x="60" y="16" width="4" height="4" fill="#D4A843"/><rect x="60" y="24" width="4" height="4" fill="#D4A843"/>
+                        <rect x="8" y="28" width="4" height="8" fill="#D4A843" opacity="0.6"><animate attributeName="opacity" values="0.6;0.3;0.6" dur="1s" repeatCount="indefinite"/></rect>
+                    </svg>
+                </div></div>
+                <div class="ground-line"></div>
+            </div>
+        </div>
+        <div class="hero-visual" style="animation:slide-up .8s ease-out .4s both">
+            <img src="assets/barber_hero.png" alt="Pixel art karakter barber profesional Mas Akbar" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-item">BASIC CUT <span class="sep">◆</span></div>
+            <div class="marquee-item">KERATIN TREATMENT <span class="sep">◆</span></div>
+            <div class="marquee-item">SMOOTHING <span class="sep">◆</span></div>
+            <div class="marquee-item">PERMING <span class="sep">◆</span></div>
+            <div class="marquee-item">ANTI RONTOK <span class="sep">◆</span></div>
+            <div class="marquee-item">ANTI KETOMBE <span class="sep">◆</span></div>
+            <div class="marquee-item">HOME SERVICE <span class="sep">◆</span></div>
+            <div class="marquee-item">SINDUADI, JOGJA <span class="sep">◆</span></div>
+            <div class="marquee-item">BASIC CUT <span class="sep">◆</span></div>
+            <div class="marquee-item">KERATIN TREATMENT <span class="sep">◆</span></div>
+            <div class="marquee-item">SMOOTHING <span class="sep">◆</span></div>
+            <div class="marquee-item">PERMING <span class="sep">◆</span></div>
+            <div class="marquee-item">ANTI RONTOK <span class="sep">◆</span></div>
+            <div class="marquee-item">ANTI KETOMBE <span class="sep">◆</span></div>
+            <div class="marquee-item">HOME SERVICE <span class="sep">◆</span></div>
+            <div class="marquee-item">SINDUADI, JOGJA <span class="sep">◆</span></div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+        <div class="section-wrap">
+            <div class="reveal"><div class="section-label">TENTANG KAMI</div><h2 class="section-title">PREMIUM BARBER<br>HOME SERVICE</h2></div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p><span class="highlight">Mas Akbar</span> adalah barber profesional dengan reputasi tinggi — terbukti dari <span class="highlight">100+ ulasan organik bintang 5</span> yang mengapresiasi edukasi dan kualitas potongannya.</p>
+                    <p>Saat ini, beliau memiliki jam kerja utama di <span class="highlight">Hotman Barbershop</span> pada pukul 10:00 - 21:30 WIB. Di luar jam tersebut, beliau menyediakan layanan <span class="highlight">Premium Home Service</span> dengan basis area dari Sinduadi, Yogyakarta.</p>
+                    <p>Kami membawa standar <span class="highlight">high-end barbershop</span> langsung ke depan pintu Anda — dengan presisi, edukasi perawatan, dan sentuhan Keraton Jogja.</p>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-card pixel-border-sm"><span class="stat-number" id="counterReviews">0</span><span class="stat-label">ULASAN<br>BINTANG 5</span></div>
+                    <div class="stat-card pixel-border-sm"><span class="stat-number" id="counterYears">0</span><span class="stat-label">TAHUN<br>PENGALAMAN</span></div>
+                    <div class="stat-card pixel-border-sm"><span class="stat-number" id="counterClients">0</span><span class="stat-label">KLIEN<br>PUAS</span></div>
+                    <div class="stat-card pixel-border-sm"><span class="stat-number">6</span><span class="stat-label">JENIS<br>LAYANAN</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <div class="section-dark">
+        <div class="section-wrap">
+            <div class="reveal"><div class="section-label">SOCIAL PROOF</div><h2 class="section-title">APA KATA MEREKA</h2></div>
+            <div class="reviews-grid">
+                <div class="review-card pixel-border-sm reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Mas Akbar bukan cuma potong rambut, tapi juga ngasih edukasi cara styling yang bener. Hasilnya selalu on point!"</p>
+                    <div class="review-author">— RONNY T. // GOOGLE REVIEW</div>
+                </div>
+                <div class="review-card pixel-border-sm reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Home service-nya super convenient. Ga perlu antri, barber dateng ke kos. Kualitas sama kayak di barbershop premium."</p>
+                    <div class="review-author">— DAVID K. // GOOGLE REVIEW</div>
+                </div>
+                <div class="review-card pixel-border-sm reveal">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Best barber in Jogja! Very professional, good communication, and the result is always amazing. Highly recommended!"</p>
+                    <div class="review-author">— JAMES W. // EXPAT REVIEW</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="section-wrap">
+            <div class="reveal"><div class="section-label">MENU LAYANAN KERATON</div><h2 class="section-title">PILIH LAYANAN<br>PREMIUM ANDA</h2></div>
+            <div class="services-grid">
+                <div class="service-card pixel-border-sm reveal" onclick="selectService('basic')">
+                    <img src="assets/barber_scene.png" alt="Basic Cut service" class="service-card-img">
+                    <div class="service-card-body">
+                        <div class="service-name">BASIC CUT</div>
+                        <div class="service-desc">Potong rambut, cuci, styling, dan edukasi perawatan rambut profesional.</div>
+                        <div class="service-meta"><span class="service-price">Rp 80.000</span><span class="service-duration">1 JAM</span></div>
+                    </div>
+                </div>
+                <div class="service-card pixel-border-sm reveal" onclick="selectService('keratin')">
+                    <img src="assets/barber_tools.png" alt="Keratin Treatment" class="service-card-img">
+                    <div class="service-card-body">
+                        <div class="service-name">KERATIN TREATMENT</div>
+                        <div class="service-desc">Pemberian nutrisi mendalam dan pelembutan tekstur rambut secara profesional.</div>
+                        <div class="service-meta"><span class="service-price">Rp 350.000</span><span class="service-duration">2 JAM</span></div>
+                    </div>
+                </div>
+                <div class="service-card pixel-border-sm reveal" onclick="selectService('smoothing')">
+                    <img src="assets/barber_hero.png" alt="Smoothing" class="service-card-img">
+                    <div class="service-card-body">
+                        <div class="service-name">SMOOTHING</div>
+                        <div class="service-desc">Pelurusan rambut secara profesional untuk tampilan sleek dan modern.</div>
+                        <div class="service-meta"><span class="service-price">Rp 350.000</span><span class="service-duration">2 JAM</span></div>
+                    </div>
+                </div>
+                <div class="service-card pixel-border-sm reveal" onclick="selectService('perming')">
+                    <img src="assets/review_stars.png" alt="Perming" class="service-card-img">
+                    <div class="service-card-body">
+                        <div class="service-name">PERMING</div>
+                        <div class="service-desc">Pengeritingan rambut untuk tekstur yang lebih berkarakter dan stylish.</div>
+                        <div class="service-meta"><span class="service-price">Rp 350.000</span><span class="service-duration">2 JAM</span></div>
+                    </div>
+                </div>
+                <div class="service-card pixel-border-sm reveal" onclick="selectService('rontok')">
+                    <img src="assets/barber_tools.png" alt="Anti Rontok" class="service-card-img">
+                    <div class="service-card-body">
+                        <div class="service-name">ANTI RONTOK</div>
+                        <div class="service-desc">Terapi khusus untuk mengatasi rambut rontok dan memperkuat akar rambut.</div>
+                        <div class="service-meta"><span class="service-price">Rp 100.000</span><span class="service-duration">1 JAM</span></div>
+                    </div>
+                </div>
+                <div class="service-card pixel-border-sm reveal" onclick="selectService('ketombe')">
+                    <img src="assets/barber_scene.png" alt="Anti Ketombe" class="service-card-img">
+                    <div class="service-card-body">
+                        <div class="service-name">ANTI KETOMBE</div>
+                        <div class="service-desc">Pembersihan kulit kepala dan terapi anti ketombe untuk rambut sehat.</div>
+                        <div class="service-meta"><span class="service-price">Rp 100.000</span><span class="service-duration">1 JAM</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <div class="section-dark">
+        <div class="section-wrap" id="pricing">
+            <div class="reveal"><div class="section-label">TRANSPARANSI HARGA</div><h2 class="section-title">DAFTAR HARGA &<br>KALKULATOR TRANSPORT</h2></div>
+            <div class="pricing-table-wrapper reveal">
+                <table class="pricing-table">
+                    <thead><tr><th>LAYANAN</th><th>DESKRIPSI</th><th>HARGA</th><th>DURASI</th></tr></thead>
+                    <tbody>
+                        <tr><td>BASIC CUT</td><td>Potong, cuci, styling + edukasi</td><td class="price-cell">Rp 80.000</td><td>1 Jam</td></tr>
+                        <tr><td>KERATIN</td><td>Nutrisi mendalam & pelembutan</td><td class="price-cell">Rp 350.000</td><td>2 Jam</td></tr>
+                        <tr><td>SMOOTHING</td><td>Pelurusan rambut profesional</td><td class="price-cell">Rp 350.000</td><td>2 Jam</td></tr>
+                        <tr><td>PERMING</td><td>Pengeritingan berkarakter</td><td class="price-cell">Rp 350.000</td><td>2 Jam</td></tr>
+                        <tr><td>ANTI RONTOK</td><td>Terapi penguatan akar</td><td class="price-cell">Rp 100.000</td><td>1 Jam</td></tr>
+                        <tr><td>ANTI KETOMBE</td><td>Pembersihan & terapi kulit kepala</td><td class="price-cell">Rp 100.000</td><td>1 Jam</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Transport Calculator -->
+            <div class="transport-calc pixel-border-sm reveal">
+                <h3>KALKULATOR BIAYA TRANSPORT</h3>
+                <div class="calc-rules">
+                    <div class="calc-rule"><div class="rule-label">RADIUS &lt; 1 KM</div><div class="rule-value">GRATIS</div></div>
+                    <div class="calc-rule"><div class="rule-label">BASE FEE (&gt;1 KM)</div><div class="rule-value">Rp 10.000</div></div>
+                    <div class="calc-rule"><div class="rule-label">PER KM BERIKUTNYA</div><div class="rule-value">Rp 2.500/KM</div></div>
+                </div>
+                <div class="calc-input-group">
+                    <div class="calc-field">
+                        <label>JARAK DARI SINDUADI (KM)</label>
+                        <input type="number" id="distanceInput" placeholder="Contoh: 5" min="0" step="0.5" oninput="calculateTransport()">
+                    </div>
+                    <div class="calc-field">
+                        <label>PILIH LAYANAN</label>
+                        <select id="calcService" onchange="calculateTransport()">
+                            <option value="0">-- Pilih Layanan --</option>
+                            <option value="80000">BASIC CUT — Rp 80.000</option>
+                            <option value="350000">KERATIN — Rp 350.000</option>
+                            <option value="350000">SMOOTHING — Rp 350.000</option>
+                            <option value="350000">PERMING — Rp 350.000</option>
+                            <option value="100000">ANTI RONTOK — Rp 100.000</option>
+                            <option value="100000">ANTI KETOMBE — Rp 100.000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calc-result" id="calcResult">
+                    <div class="total-label">ESTIMASI TOTAL BIAYA</div>
+                    <div class="total-value" id="calcTotal">Rp 0</div>
+                    <div class="total-breakdown" id="calcBreakdown"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schedule -->
+    <section id="schedule">
+        <div class="section-wrap">
+            <div class="reveal"><div class="section-label">AVAILABILITY LOG</div><h2 class="section-title">JADWAL KETERSEDIAAN<br>HOME SERVICE</h2></div>
+            <div class="schedule-grid reveal">
+                <div class="schedule-day"><div class="day-name">SENIN</div><div class="day-status limited">TERBATAS</div><div class="day-slots">08:00-09:00<br>22:00+</div></div>
+                <div class="schedule-day"><div class="day-name">SELASA</div><div class="day-status available">FULL DAY</div><div class="day-slots">BEBAS<br>PILIH JAM</div></div>
+                <div class="schedule-day"><div class="day-name">RABU</div><div class="day-status limited">TERBATAS</div><div class="day-slots">08:00-09:00<br>22:00+</div></div>
+                <div class="schedule-day"><div class="day-name">KAMIS</div><div class="day-status limited">TERBATAS</div><div class="day-slots">08:00-09:00<br>22:00+</div></div>
+                <div class="schedule-day"><div class="day-name">JUMAT</div><div class="day-status limited">TERBATAS</div><div class="day-slots">08:00-09:00<br>22:00+</div></div>
+                <div class="schedule-day"><div class="day-name">SABTU</div><div class="day-status limited">TERBATAS</div><div class="day-slots">08:00-09:00<br>22:00+</div></div>
+                <div class="schedule-day"><div class="day-name">MINGGU</div><div class="day-status limited">TERBATAS</div><div class="day-slots">08:00-09:00<br>22:00+</div></div>
+            </div>
+            <div class="schedule-note pixel-border-sm reveal">
+                <p><strong style="color:var(--emas)">CATATAN:</strong> Slot Home Service dikunci otomatis agar tidak berbenturan dengan jam operasional di Hotman Barbershop (10:00 - 21:30 WIB). Hari Selasa adalah hari libur — slot tersedia penuh!</p>
+            </div>
+            <div style="margin-top:40px;text-align:center" class="reveal">
+                <img src="assets/jogja_map.png" alt="Peta pixel art area layanan Sinduadi Jogja" style="max-width:480px;width:100%;border:4px solid var(--emas);box-shadow:8px 8px 0 rgba(0,0,0,.5);image-rendering:pixelated">
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="booking-section" id="booking">
+        <div class="reveal"><div class="section-label">KONFIRMASI MISI</div><h2 class="section-title">LUNCURKAN<br>BOOKING ANDA</h2></div>
+        <form class="booking-form reveal" id="bookingForm" onsubmit="handleBooking(event)">
+            <div class="form-row">
+                <div class="form-group"><label>NAMA LENGKAP</label><input type="text" id="bookName" placeholder="Nama Anda" required></div>
+                <div class="form-group"><label>NO. WHATSAPP</label><input type="tel" id="bookPhone" placeholder="08xxxxxxxxxx" required></div>
+            </div>
+            <div class="form-group"><label>PILIH LAYANAN</label>
+                <select id="bookService" required>
+                    <option value="">-- Pilih Layanan --</option>
+                    <option value="BASIC CUT (Rp 80.000)">BASIC CUT — Rp 80.000</option>
+                    <option value="KERATIN (Rp 350.000)">KERATIN — Rp 350.000</option>
+                    <option value="SMOOTHING (Rp 350.000)">SMOOTHING — Rp 350.000</option>
+                    <option value="PERMING (Rp 350.000)">PERMING — Rp 350.000</option>
+                    <option value="ANTI RONTOK (Rp 100.000)">ANTI RONTOK — Rp 100.000</option>
+                    <option value="ANTI KETOMBE (Rp 100.000)">ANTI KETOMBE — Rp 100.000</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="form-group"><label>TANGGAL PREFERENSI</label><input type="date" id="bookDate" required></div>
+                <div class="form-group"><label>JAM PREFERENSI</label>
+                    <select id="bookTime" required>
+                        <option value="">-- Pilih Jam --</option>
+                        <option value="08:00">08:00 WIB</option>
+                        <option value="09:00">09:00 WIB</option>
+                        <option value="22:00">22:00 WIB</option>
+                        <option value="23:00">23:00 WIB</option>
+                        <option value="00:00">00:00 WIB</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group"><label>LOKASI LENGKAP (NO. KAMAR/LT)</label><textarea id="bookLocation" placeholder="Alamat lengkap Anda di area Jogja..." required></textarea></div>
+            <div class="form-group"><label>CATATAN TAMBAHAN (OPSIONAL)</label><textarea id="bookNotes" placeholder="Request khusus, referensi gaya, dll..."></textarea></div>
+            <div class="form-submit-area">
+                <button type="submit" class="btn-submit">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="6" y="0" width="4" height="4"/><rect x="4" y="4" width="8" height="4"/><rect x="2" y="8" width="12" height="4"/><rect x="6" y="12" width="4" height="4"/></svg>
+                    LUNCURKAN BOOKING (QRIS)
+                </button>
+                <p class="form-note">Sistem ini terenkripsi oleh SAMWAN_SOLUTIONS // Verifikasi via Midtrans<br>Pembayaran via QRIS — Invoice akan dikirim via WhatsApp</p>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">AKBAR_BARBER.EXE</div>
+        <div class="footer-tagline">EST. 2026 // KERATON_REMASTERED<br>PREMIUM HOME SERVICE — SINDUADI, YOGYAKARTA</div>
+        <div class="footer-links">
+            <a href="mailto:akbar@barberabe.com">EMAIL</a>
+            <a href="https://wa.me/6281234567890" target="_blank">WHATSAPP</a>
+            <a href="https://instagram.com" target="_blank">INSTAGRAM</a>
+        </div>
+        <div class="footer-credit">POWERED BY <a href="#">SAMWAN SOLUTIONS</a><br>AKBAR.SYS_v3.0 // ALL RIGHTS RESERVED</div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
